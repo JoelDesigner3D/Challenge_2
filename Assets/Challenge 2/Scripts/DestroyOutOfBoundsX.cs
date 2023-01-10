@@ -23,6 +23,12 @@ public class DestroyOutOfBoundsX : MonoBehaviour
            Destroy(gameObject);
         }
 
+        if (transform.position.y < 0)
+        {
+            // If the ball hits the ground, a “Game Over” debug message is displayed
+            Debug.Log("Game Over");
+        }
+
     }
    
 }
